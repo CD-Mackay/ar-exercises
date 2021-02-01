@@ -12,6 +12,8 @@ puts "----------"
 # Your code goes here ...
 store_name = $stdin.gets.chomp
 
-puts @new_store = Store.create(name: "#{store_name}")
+@new_store = Store.create(name: "#{store_name}")
+puts @new_store.errors.messages
+
 
 
