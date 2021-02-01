@@ -10,3 +10,8 @@ puts "Exercise 7"
 puts "----------"
 
 # Your code goes here ...
+store_name = $stdin.gets.chomp
+
+puts @new_store = Store.create(name: "#{store_name}")
+
+
